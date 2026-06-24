@@ -110,7 +110,7 @@ body{
 /* =============== ELEMENTS ================*/
   body{
     background:
-    url('/../assets/images/background-pattern-desktop.svg') top center / 100%  no-repeat,var(--purple_100);
+    url('/assets/images/background-pattern-desktop.svg') top center / 100%  no-repeat,var(--purple_100);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
