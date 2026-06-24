@@ -1,0 +1,142 @@
+/* ─── CUSTOM PROPERTIES ─────────────────────────────── */
+:root {
+  --white:      hsl(0, 100%, 100%);
+  --purple_100: hsl(275, 100%, 97%);
+  --purple_600: hsl(292, 16%, 49%);
+  --purple_950: hsl(292, 42%, 14%);
+  --blue: hsl(228, 45%, 44%);
+
+}
+/*----- ELEMENTS --------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    justify-content: center;
+    background:
+    url('/../assets/images/background-pattern-mobile.svg') top center / 100%  no-repeat,var(--purple_100);
+    font-weight: 400;
+    color: var(--purple_950);
+    font-size: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+/*--------CLASSES --------------------------------------*/
+.card{
+   
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 8rem;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;  
+    box-shadow: 0 .9rem 2rem var(--purple_950); 
+   
+}
+/* Título con estrella morada */
+.faq-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* Cada pregunta */
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-top: 0.0625rem solid var(--white);
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  font-family: 'Work Sans', sans-serif ;
+  align-items: center;
+  
+}
+
+/* Ícono circular */
+.icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.icon-minus{
+  background:
+    url('/../assets/images/icon-minus.svg') top center / 100%  no-repeat,var(--purple_100);
+}
+.accordion .item {
+  border-bottom: 0.0625rem solid var(--purple_100);
+  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+ 
+}
+
+.accordion .item:last-child {
+  border-bottom: 0.0625rem solid var(--purple_100);
+}
+/* Respuesta oculta */
+.answer.hidden { display: none; }
+
+.answer p { 
+   color:var(--purple_600);
+   font-size: 0.9rem; 
+   line-height: 1.4; 
+   padding-bottom: 1rem;
+   
+  }
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+    margin-top: 2rem;}
+.attribution a { 
+    color: var(--purple_600); 
+}
+@media (min-width: 768px) {
+/* =============== ELEMENTS ================*/
+  body{
+    background:
+    url('/../assets/images/background-pattern-desktop.svg') top center / 100%  no-repeat,var(--purple_100);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* esto la centra verticalmente */
+  }
+ /* ===============CLASSES ================*/
+  .card{ 
+    margin-top: 0;       
+    margin-inline: 0;     
+    width: 37rem;         
+    padding: 2rem;
+   
+}
+.faq-title{
+  font-size: 3.5rem;
+  gap: 2rem;
+}
+
+.question{
+  font-size: 1.1rem;
+}
+.answer p{
+  font-size: 1.12rem;
+  padding-top: 1rem;
+}
+
+
+}
