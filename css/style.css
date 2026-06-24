@@ -31,7 +31,7 @@ body{
     background: var(--white);
     border-radius: 1rem;
     padding: 1.5rem;
-    margin-top: 8rem;
+    margin-block-start: 8rem;
     margin-inline-start: 1.5rem;
     margin-inline-end: 1.5rem;  
     box-shadow: 0 .9rem 2rem var(--purple_950); 
@@ -43,7 +43,7 @@ body{
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.05rem;
 }
 /* Cada pregunta */
 .question {
@@ -102,7 +102,7 @@ body{
 .attribution { 
     font-size: 0.6875rem; 
     text-align: center; 
-    margin-top: 2rem;}
+    margin-block-start: 2rem;}
 .attribution a { 
     color: var(--purple_600); 
 }
@@ -119,7 +119,7 @@ body{
   }
  /* ===============CLASSES ================*/
   .card{ 
-    margin-top: 0;       
+    margin-block-start: 0;       
     margin-inline: 0;     
     width: 37rem;         
     padding: 2rem;
