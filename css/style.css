@@ -14,7 +14,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     justify-content: center;
     background:
-    url('/../assets/images/background-pattern-mobile.svg') top center / 100%  no-repeat,var(--purple_100);
+    url('../assets/images/background-pattern-mobile.svg') top center / 100%  no-repeat,var(--purple_100);
     font-weight: 400;
     color: var(--purple_950);
     font-size: 1rem;
@@ -110,7 +110,7 @@ body{
 /* =============== ELEMENTS ================*/
   body{
     background:
-    url('/assets/images/background-pattern-desktop.svg') top center / 100%  no-repeat,var(--purple_100);
+    url('../assets/images/background-pattern-desktop.svg') top center / 100%  no-repeat,var(--purple_100);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
